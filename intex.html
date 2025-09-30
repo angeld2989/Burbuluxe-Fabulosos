@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BURBULUXE - Tienda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo"></div>
+      <div>
+        <h1>BURBULUXE</h1>
+        <div class="small">Frescura en cada burbuja — Entregas a domicilio (centro)</div>
+      </div>
+    </div>
+    <div>
+      <button id="openCart" class="cart-btn">Carrito (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid" id="products">
+
+    </section>
+  </main>
+
+  <div id="cartPanel" class="cart-panel" style="display:none">
+    <h3>Tu pedido</h3>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="small">Tus datos:</div>
+      <input id="buyerName" placeholder="Nombre" />
+      <input id="buyerPhone" placeholder="Teléfono" />
+      <textarea id="buyerAddr" placeholder="Dirección" rows="2"></textarea>
+      <div class="cart-actions">
+        <button id="closeCart" class="btn">Seguir comprando</button>
+        <button id="sendWhats" class="send">Enviar pedido por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
